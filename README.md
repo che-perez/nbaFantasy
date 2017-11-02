@@ -1,19 +1,24 @@
-# nbaFantasy
+# NBA Fantasy
 
-## Proposal
+An App that lets you create a fantasy team with real NBA players.
 
-### The Idea
+## Getting Started
 
-This is a web application for making your dream team out of real NBA players.
+Fork the Repo.
+Clone it into your local computer.
+Intall npm packages.
 
-### ERD
+### Prerequisites
 
-![ERD1](public/images/erd1.jpg)
-![ERD2](public/images/erd2.jpg)
-![ERD3](public/images/erd3.jpg)
-![ERD4](public/images/erd4.jpg)
-![ERD5](public/images/erd5.jpg)
+Open your Terminal or Command Prompt and navigate to the root folder of the repo.
+Type
 
-### Implementation
+```
+npm install
+```
 
-The application will be conected to a backend server with a database. That will be able to insert and select data from the tables.
+## Built With
+
+* [Node.js](https://nodejs.org/en/) - Connect to Sever Side.
+* [Express.js](https://github.com/expressjs/express) - Connect to the Database.
+* [npm nba](https://www.npmjs.com/package/nba) - Used to collect Player stats.
