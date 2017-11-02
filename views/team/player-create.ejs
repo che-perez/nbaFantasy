@@ -2,9 +2,8 @@
 
 <div class="middle">
  <div class="player">
-<h1 id="text2"><%= player.firstname %></h1>
-<h1 id="text3"><%= player.lastname %></h1>
-<h2 id="text3"><%= player.position %></h2>
+<h1 id="text"><span>Full Name: </span><%= player.firstname %> <%= player.lastname %></h1>
+<h2 id="text"><span>Position: </span><%= player.position %></h2>
 <img src="https://nba-players.herokuapp.com/players/<%= player.lastname %>/<%= player.firstname %>">
 
 
