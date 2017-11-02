@@ -1,11 +1,17 @@
 <% include ../partials/boilerplate %>
 <div class="middle">
-<h1><span id="name">Team Name: </span><%= team.teamname %></h1>
-        <br>
+ <div class="player">
+ <h1 id="text"><span>Team Name:</span> </span><%= team.teamname %></h1>
+ <h1 id="text"><span>Team Owner:</span> </span><%= team.ownername %></h1>
     <img src="<%= team.picture_url %>">
  
   <a class="btn" href="/team/<%= team.id %>/add">Add Player!</a>
  
+  <a class="btn" href="/player">Roster!</a>
+ 
+ <a class="btn" href="/team/<%= team.id %>/edit">Edit Team</a>
+ 
+</div>
 </div>
  
 

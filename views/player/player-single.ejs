@@ -1,15 +1,17 @@
 <% include ../partials/boilerplate %>
 <div class="middle">
- <h1 id="text2">Full Name: <%= player.firstname %> <%= player.lastname %></h1>
-<h2 id="text3">Position: <%= player.position %></h2>
+ <div class="player">
+  <h1 id="text"><span>Full Name:</span> <%= player.firstname %> <%= player.lastname %></h1>
+  <h2 id="text"><span>Position:</span> <%= player.position %></h2>
 <img src="<%= player.headshot_url %>">
- <h2 id="text3">Country: <%= player.country %></h2>
- <h2 id="text3">Number: <%= player.jersey %></h2>
- <h2 id="text3">Point Per Game: <%= player.ppg %></h2>
- <h2 id="text3">Assits Per Game: <%= player.apg %></h2>
- <h2 id="text3">Rebounds Per Game: <%= player.rpg %></h2>
+  <h2 id="text"><span>Country:</span> <%= player.country %></h2>
+  <h2 id="text"><span>Number:</span> <%= player.jersey %></h2>
+  <h2 id="text"><span>Point Per Game:</span> <%= player.ppg %></h2>
+  <h2 id="text"><span>Assits Per Game:</span> <%= player.apg %></h2>
+  <h2 id="text"><span>Rebounds Per Game:</span> <%= player.rpg %></h2>
   <form class="delete" action="/player/<%= player.id%>?_method=DELETE" method="POST">
         <input type="submit" value="Delete">
 </form>
  </div>
+</div>
 <% include ../partials/end %>

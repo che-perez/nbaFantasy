@@ -1,10 +1,14 @@
 <% include ../partials/boilerplate %>
 <div class="middle">
-<h1><span id="name">Team Name: </span><%= team.teamname %></h1>
-        <br>
-    <img src="<%= team.picture_url %>">
- 
+ <h1 class="msg">Teams!</h1>
+<% team.forEach(team => { %>
+ <div class="player">
+   <h1 id="text"><span>Team Name:</span> </span><%= team.teamname %></h1>
+
+    <a class="btn" href="/team/<%= team.id %>"> Info</a>
  </div>
- 
+<% }) %>
+  <a class="btn" href="/team/new">Create Team!</a>
+</div>
 
 <% include ../partials/end %>

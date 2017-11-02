@@ -71,6 +71,7 @@ teamController.update = (req, res) => {
  Team.update({
    teamname: req.body.teamname,
   picture_url: req.body.picture_url,
+  ownername: req.body.ownername,
   wins: req.body.wins,
   losses: req.body.losses,
  }, req.params.id)

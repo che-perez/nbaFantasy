@@ -1,0 +1,12 @@
+<% include ../partials/boilerplate %>
+<div class="middle">
+ <h1 class="msg">Edit your TEAM!</h1>
+  <form class="form" method="POST" action='/team/<%= team.id%>?_method=PUT'>
+    <input class="inpt" type="text" name="teamname" value="<%=team.teamname %>" placeholder="Team Name" required/>
+   <input class="inpt" type="text" name="ownername" value="<%=team.ownername %>" placeholder="Owner Name" required/>
+    <input class="inpt" type="text" name="picture_url" value="<%=team.picture_url%>" placeholder="Team Logo URL" />
+    <input class="inpt" type="submit" value="Update!" />
+  </form>
+</div>
+
+<% include ../partials/end %>

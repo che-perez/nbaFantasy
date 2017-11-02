@@ -14,7 +14,7 @@ playerRouter.post('/', authHelpers.loginRequired, playerController.create);
 // res.render('player/player-create', {player: res.locals});
 //});
 
-playerRouter.get('/:id',playerController.show);
+playerRouter.get('/:id', authHelpers.loginRequired, playerController.show);
 
 
 playerRouter.delete('/:id', authHelpers.loginRequired, playerController.delete);
