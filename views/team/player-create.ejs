@@ -1,0 +1,26 @@
+<% include ../partials/boilerplate %>
+
+<div class="middle">
+<h1 id="text2"><%= player.firstname %></h1>
+<h1 id="text3"><%= player.lastname %></h1>
+<h2 id="text3"><%= player.position %></h2>
+<img src="https://nba-players.herokuapp.com/players/<%= player.lastname %>/<%= player.firstname %>">
+
+
+<form class="" method="POST" action="/team/<%= teamid%>/player">
+    <input class="hidden" type="text" value="<%= player.firstname %>" name="firstname" />
+    <input class="hidden" type="text" value="<%= player.lastname %>" name="lastname" />
+  <input class="hidden" type="text" value="<%= player.position %>" name="position" />
+  <input class="hidden" type="text" value="https://nba-players.herokuapp.com/players/<%= player.lastname %>/<%= player.firstname %>" name="headshot_url" />
+ <input class="hidden" type="text" value="<%= player.country %>" name="country"/>
+ <input class="hidden" type="number" value="<%= player.jersey %>" name="jersey" />
+ <input class="hidden" type="number" value="<%= player.ppg %>" name="ppg" />
+ <input class="hidden" type="number" value="<%= player.apg %>" name="apg" />
+ <input class="hidden" type="number" value="<%= player.rpg %>" name="rpg" />
+ 
+ <input class="button3" type="submit" value="Select!" />
+</form>
+
+ </div>
+
+<% include ../partials/end %>

@@ -1,0 +1,14 @@
+<% include ../partials/boilerplate %>
+<div class="middle">
+ <h1 class="msg">Welcome to the Fantasy!</h1>
+  <form class="form" method='POST' action='/auth/register'>
+    <input class="inpt" name='username' type='text' placeholder='Username' required/>
+    <input class="inpt" name='email' type='email' placeholder='Email' required/>
+    <input class="inpt" name='password' type='password' placeholder='Password' required/>
+    <input class="inpt" name='firstname' type='text' placeholder='First name' required/>
+    <input class="inpt" name='lastname' type='text' placeholder='Last name' required />
+    <input class="inpt" type='submit' value='Register!'/>
+  </form>
+</div>
+
+<% include ../partials/end %>

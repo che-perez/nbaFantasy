@@ -1,0 +1,11 @@
+<% include ../partials/boilerplate %>
+<div class="middle">
+ <h1 class="msg">Search for your Player!</h1>
+<form class="form" method="GET" action="/team/<%= teamid%>/create">
+  <input class="inpt" type="text" name="q" placeholder="Player Name" />
+  <input class="inpt" type="submit" value="Search" />
+</form>
+ 
+ </div>
+
+<% include ../partials/end %>

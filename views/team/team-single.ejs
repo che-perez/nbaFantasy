@@ -1,0 +1,12 @@
+<% include ../partials/boilerplate %>
+<div class="middle">
+<h1><span id="name">Team Name: </span><%= team.teamname %></h1>
+        <br>
+    <img src="<%= team.picture_url %>">
+ 
+  <a class="btn" href="/team/<%= team.id %>/add">Add Player!</a>
+ 
+</div>
+ 
+
+<% include ../partials/end %>

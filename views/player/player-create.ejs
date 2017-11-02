@@ -1,0 +1,22 @@
+<% include ../partials/boilerplate %>
+
+<div class="middle">
+<h1 id="text2"><%= player.firstname %></h1>
+<h1 id="text3"><%= player.lastname %></h1>
+<h2 id="text3"><%= player.position %></h2>
+<img src="https://nba-players.herokuapp.com/players/<%= player.lastname %>/<%= player.firstname %>">
+
+
+<form class="" method="POST" action="/player">
+    <input type="text" value="<%= player.firstname %>" name="firstname" />
+    <input type="text" value="<%= player.lastname %>" name="lastname" />
+  <input type="text" value="<%= player.position %>" name="position" />
+ <input type="number" value="<%= player.ppg %>" name="ppg" />
+ <input type="number" value="<%= player.apg %>" name="apg" />
+ <input type="number" value="<%= player.rpg %>" name="rpg" />
+ 
+    <input class="button3" type="submit" value="Select!" />
+</form>
+ </div>
+
+<% include ../partials/end %>

@@ -1,0 +1,14 @@
+<% include ../partials/boilerplate %>
+<div class="middle list">
+ <h1 class="msg">Team Roster!</h1>
+<% player.forEach(player => { %>
+ <div class="player">
+  <h1 id="text2">Full Name: <%= player.firstname %> <%= player.lastname %></h1>
+<h2 id="text3">Position: <%= player.position %></h2>
+<img src="<%= player.headshot_url %>">
+    <a class="btn" href="/player/<%= player.id %>"> Info</a>
+ </div>
+<% }) %>
+</div>
+
+<% include ../partials/end %>

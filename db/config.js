@@ -10,7 +10,7 @@ function setDatabase() {
  if(process.env.NODE_ENV === 'development' || 
    !process.env.NODE_ENV) {
      return pgp({
-      database: '---------',
+      database: 'nbaFantasy_db',
       port: 5432,
       host: 'localhost',
      });
